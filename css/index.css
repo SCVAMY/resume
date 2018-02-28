@@ -42,26 +42,41 @@
             color: inherit;
             text-decoration: none;
         }
+        body{
+            background-color: #EFEFEF;
+        }
+        hr{
+            height:0;
+            border:none;
+            border-top: 1px solid #DEDEDE;
+            
+        }
+
         .top-nav-bar{
             margin-top:10px;
-            padding: 10px 15px 10px 15px; 
-            position: relative;
+            padding: 10px  0 10px 0; 
             z-index: 10000 ;
-
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0
         }
-        .top-nav-bar>a{
+        .topNavBar-inner{
+            padding: 0 140px 0 16px;
+        }
+        .top-nav-bar a{
             float: left;
             font-size: 24px;
             font-family:"Arial Black";
             padding-top: 6px;
             padding-bottom: 9px;
         }
-        .top-nav-bar>nav>ul{
+        .top-nav-bar nav>ul{
             list-style: none;
-            margin-right: 130px;
+            /* margin-right: 130px; */
             padding: 0
         }
-        .top-nav-bar>nav>ul>li{
+        .top-nav-bar nav>ul>li{
             float: right;
             margin-left: 17px;
             margin-right: 17px;
@@ -72,7 +87,7 @@
             display:block;
             clear: both;
         }
-        .top-nav-bar>nav>ul>li>a{
+        .top-nav-bar nav>ul>li>a{
             font-size: 12px;
             color: #C0C3C6;
             padding: 7px 0 7px 0;
@@ -81,7 +96,7 @@
             display:block;
 
         }
-        .top-nav-bar>nav>ul>li>a:hover{
+        .top-nav-bar nav>ul>li>a:hover{
             border-bottom: 3px solid #FB5460;
         }
         .top-nav-bar .logo .card,.rs{
@@ -97,11 +112,12 @@
         .banner{
             height: 515px;
             background-image: url('../images/banner.jpg');
+            /* 使背景图按比例缩放 */
             background-size: cover;
             background-color: #242832;
             background-repeat: no-repeat;
-            background-position: center;    
-            margin-top:-100px;
+            background-position: center center;    
+           
             z-index: 1;
         }
         .banner::before{
@@ -111,18 +127,115 @@
             top:0;
             left:0;
             width:100%;
-            height:493px;
+            height:515px;
             z-index: 1;
         }
-        .main{
+        /* .main{
             width:850px;
             height: 371px;
-            padding:54px 45px 15px 45px;
+            padding:55px 46px 15px 46px;
             background-color: white;
             position: absolute;
             top:170px;
             left: 256px;
             z-index: 1000;
+        } */
+        .usercard{
+            border:1px solid red;
+            max-width:940px;
+            margin-left:auto;
+            margin-right:auto;
+            background-color: white;
+            
         }
+        .usercard .welcom{
+            background-color: #FB5460;
+            display: inline-block;
+            padding: 4px 16px;
+            line-height: 22px;
+            position: relative;
+            color: white;
+            font-weight: 3px;
+            margin-bottom: 20px;
+            
+        }
+        .usercard .welcom .trigon{
+            display: block;
+            border:8px solid transparent;
+            width:0;
+            border-left-color:#FB5460;
+            border-top-width:0;
+            position: absolute;
+            left:5px;
+            top:100%
+        }
+        .usercard .picture{
+            float: left;
+            margin-bottom: 40px;
+        }
+        .usercard .picture img{
+            width: 279px;
+            height: 347px;
+        }
+        .usercard .profile{
+            float: left;
+            margin-left: 65px;
+            width: 470px;
+        }
+        .usercard .profile h1{
+            color: #3C4351;
+        }
+        .pictureAndProfile{
+            padding: 50px 0px 0 50px;
+        }
+        .usercard .profile hr{
+            margin-top: 26px;
+            margin-bottom: 27px;
+        }
+        .usercard .profile .urdescription{
+            color: #3C4351
+        }
+        .usercard .profile dl dt,.usercard .profile dl dd{
+            float: left;
+            padding: 6px 0 6px 0;
+            /* 写成50% 一个dt占50% dd占50% 就可以自动换行了  */
+        }
+        .usercard .profile dl dt{
+            width: 25%;
+            color: #3C4351;
+        }
+        .usercard .profile dl dd{
+            width: 75%;
+            color: #9DA0A7;
+        }
+        .usercard .social-media-account{
+            float: left;
+            background-color:#FB5460;
+            text-align: center;
+            width: 100%;
+            margin-left: -50px;
+            padding: 15px 30px 20px 20px;
+            
+            
 
-         
+        }
+        .usercard .social-media-account svg{
+            width: 30px;
+            height: 30px;
+            fill: white;
+            margin: 0;
+            /* 解决上面与下面空隙不对称的情况 */
+            vertical-align: top;
+            
+        }
+        .usercard .social-media-account>a{
+            display: inline-block;
+            border-radius: 50%;
+            padding: 10px 10px 10px 10px;
+            margin: 0 30px 0 30px;
+            
+            
+        }
+        .usercard .social-media-account>a:hover{
+            background-color: #E14B56
+        }

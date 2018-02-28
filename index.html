@@ -6,36 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>my resume</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="//at.alicdn.com/t/font_575547_69nlocrjhq3bx1or.js
+    "></script>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
     <!-- div标签没有意义 所以要给一个classname 解释其意思 -->
     <div class="top-nav-bar">
-        <a href="#" class="logo" alt="logo">
-            <span class="rs">RS</span><span class="card">card</span>
-        </a>
-        <!-- <img src="#" alt="logo"> -->
-        <nav>
-            <ul class="clearfix"> 
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">工作经验</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其它</a></li>
-            </ul>
-        </nav>
+        <div class="topNavBar-inner clearfix">
+            <a href="#" class="logo" alt="logo">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <!-- <img src="#" alt="logo"> -->
+            <nav>
+                <ul class="clearfix"> 
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">工作经验</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其它</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div class="banner">
     </div>
     <main class="main">
-        <div class="cart">
+        <div class="usercard">
+            <div class="pictureAndProfile clearfix">
             <div class="picture">
-                <img src="./images/touxiang.jpg" alt="touxiang">
+                <img src="./images/6.jpg" alt="touxiang">
             </div>
             <div class="profile">
-                <span class="welcom">Hello</span>
+                <span class="welcom">Hello
+                    <span class="trigon"></span>
+                </span>
                 <h1 class="urname">amylee</h1>
                 <p class="urdescription">前端工程师</p>
                 <hr>
@@ -45,20 +61,32 @@
                     <dt>年龄</dt>
                     <!-- descripthin defination -->
                     <dd>18</dd>
-                    <dt>所在</dt>
-                    <dd>成都</dd>
+                    <dt>所在地</dt>
+                    <dd>四川省-成都市</dd>
                     <dt>email</dt>
-                    <dd>123@qq.com</dd>
+                    <dd>amylee77777@163.com</dd>
+                    <dt>Tel</dt>
+                    <dd>18512817729</dd>
                 </dl>
             </div>
             <footer class="social-media-account">
-                    <a href="#"><img src="#" alt="" ></a>
-                    <a href="#"><img src="#" alt="" ></a>
-                    <a href="#"><img src="#" alt="" ></a>
-                    <a href="#"><img src="#" alt="" ></a>
-                    <a href="#"><img src="#" alt="" ></a>
-                    <a href="#"><img src="#" alt="" ></a>              
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weixin"></use>
+                        </svg>
+                    </a>
             </footer>  
+        </div>
         </div>
        
         <a href="#" class="button">下载PDF简历</a>
