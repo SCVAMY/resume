@@ -54,7 +54,7 @@
 
         .top-nav-bar{
             margin-top:10px;
-            padding: 10px  0 10px 0; 
+            padding: 10px  0 40px 0; 
             z-index: 10000 ;
             position: fixed;
             width: 100%;
@@ -141,11 +141,12 @@
             z-index: 1000;
         } */
         .usercard{
-            border:1px solid red;
+            border:0px solid red;
             max-width:940px;
             margin-left:auto;
             margin-right:auto;
             background-color: white;
+            box-shadow: 1px 2px 12px 0px rgba(140,129,140,0.66);
             
         }
         .usercard .welcom{
@@ -186,7 +187,7 @@
             color: #3C4351;
         }
         .pictureAndProfile{
-            padding: 50px 0px 0 50px;
+            padding: 58px 0px 0 50px;
         }
         .usercard .profile hr{
             margin-top: 26px;
@@ -238,4 +239,49 @@
         }
         .usercard .social-media-account>a:hover{
             background-color: #E14B56
+        }
+
+        .main{
+            position: relative;;
+            margin-top:-344px;
+            margin-left: 17px;
+            z-index: 2000;
+            
+        }
+
+        body .main .downloadWraper{
+            text-align: center;
+            margin-top: 32px;
+        }
+        body .main .download{
+            font-size: 14px;
+            line-height: 16px;
+            padding: 21px 60px;
+            display: inline-block;
+            border: 1px solid #CBCDCF;
+            border-radius: 5px;
+            color: #3C4351;
+            font-weight: bold;
+            transition: box-shadow 0.2s;
+        }
+        body .main .download:hover{
+            box-shadow: 0px 6px 12px 0px rgba(140,129,140,0.51);
+        }
+        .main .selfIntroduction{
+            color:#1A1A1A;
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            line-height: 30px;
+            margin-top:31px;
+        }
+
+        .skills{
+            max-width: 940px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .skiils>h2{
+            
         }
