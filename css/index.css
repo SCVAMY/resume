@@ -292,7 +292,7 @@
             line-height: 1.2;
             font-weight: 600;
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 30px;
         }
         .skills>ol{
             background-color: white;
@@ -331,11 +331,13 @@
         }
         .portfolio{
             text-align: center;
+            margin-top:78px;
         }
         .portfolio>nav{
             text-align: center;
             display: inline-block;
             vertical-align: top;
+            margin-bottom: 30px;
         }
         .portfolio>nav>ol{
             display: inline-block;
@@ -351,10 +353,13 @@
         .portfolio>nav .bar{
             height: 5px;
             background-color: white;
+            border-radius: 4px;
         }
         .portfolio>nav .bar>.bar-inner{
             height: 100%;
-            background: yellowgreen;
+            background-color:#FB5460 ;
+            border-radius: 4px;
+            transition: all 0.5s;
         }
         .portfolio>nav .bar.state-1>.bar-inner{
             height: 100%;
@@ -370,3 +375,16 @@
             width: 32px;
             margin-left: 143px;
         }
+        .portfolio .works{
+            position: relative;
+            /* border:1px solid red; */
+            margin-left:auto;
+            margin-right:auto; 
+            /* margin-top:30px; */
+
+        }
+        .portfolio .works>.big,
+        .portfolio .works>.small{
+            position: absolute;
+        }
+        
