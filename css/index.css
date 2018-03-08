@@ -277,7 +277,7 @@
             text-align: center;
             line-height: 30px;
             margin-top:31px;
-            font-family: "Microsoft Yahei";
+            font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
         }
 
         .skills{
