@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>my resume</title>
     <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/loading.css"> -->
     <script src="//at.alicdn.com/t/font_575547_69nlocrjhq3bx1or.js
     "></script>
     <style>
@@ -19,10 +20,8 @@
     </style>
 </head>
 <body>
-    <div class = "loading">
-    </div>
     <!-- div标签没有意义 所以要给一个classname 解释其意思 -->
-    <div class="top-nav-bar">
+    <div  id = "topNavBar"class="top-nav-bar">
         <div class="topNavBar-inner clearfix">
             <a href="#" class="logo" alt="logo">
                 <span class="rs">Amylee</span>
@@ -32,7 +31,13 @@
             <nav>
                 <ul class="clearfix"> 
                     <li><a href="#">技能</a></li>
-                    <li><a href="#">作品</a></li>
+                    <li><a  class = "menuTrigger" href="#">作品</a>
+                        <ul class="submenu">
+                            <li>作品1</li>
+                            <li>作品2</li>
+                            <li>作品3</li>
+                        </ul>
+                    </li>
                     <li><a href="#">工作经验</a></li>
                     <li><a href="#">博客</a></li>
                     <li><a href="#">日历</a></li>
@@ -183,5 +188,6 @@
         }
 
     </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
