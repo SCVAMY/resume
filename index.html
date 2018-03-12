@@ -30,19 +30,19 @@
             <!-- <img src="#" alt="logo"> -->
             <nav>
                 <ul class="clearfix"> 
-                    <li><a href="#">技能</a></li>
-                    <li><a  class = "menuTrigger" href="#">作品</a>
+                    <li><a href="#">其它</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">工作经验</a></li>
+                    <li class = "menuTrigger"><a href="#works">作品</a>
                         <ul class="submenu">
                             <li>作品1</li>
                             <li>作品2</li>
                             <li>作品3</li>
                         </ul>
                     </li>
-                    <li><a href="#">工作经验</a></li>
-                    <li><a href="#">博客</a></li>
-                    <li><a href="#">日历</a></li>
-                    <li><a href="#">联系方式</a></li>
-                    <li><a href="#">其它</a></li>
+                    <li><a href="#skills">技能</a></li>
                 </ul>
             </nav>
         </div>
@@ -109,7 +109,7 @@
     </main>
 
     <section class="skills">
-        <h2>技能</h2>
+        <h2 id = "skills">技能</h2>
         <ol class="clearfix">
             <li>
                 <h3>HTML5 &amp; css3</h3>
@@ -151,7 +151,7 @@
         </ol>
     </section>
     <section class="portfolio">
-        <h2>作品集</h2>
+        <h2 id="works">作品集</h2>
         <nav class="clearfix">
             <ol id="portfolioList">
                 <li>所有</li>
@@ -176,7 +176,7 @@
     </section>
     <script>
         var olChildren = document.getElementById("portfolioList").children;
-        console.log(olChildren);
+        // console.log(olChildren);
         olChildren[0].onclick = function(){
             portfolioBar.className = "bar state-1" 
         };

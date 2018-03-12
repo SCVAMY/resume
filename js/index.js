@@ -11,10 +11,15 @@ window.onscroll = function(){
     }
 }
 
-var aTags = document.getElementsByClassName('menuTrigger');
-for(var let = 0; i < aTags; i++){
-    aTags[i].onmouseenter = function(){
-        aTags.addClassList = 
+var liTags = document.getElementsByClassName('menuTrigger');
+for( let i = 0; i < liTags.length; i++){
+    liTags[i].onmouseenter = function(event){
+        let ul = event.currentTarget.getElementsByTagName('ul')[0];
+        ul.classList.add("active");
     }
-    aTags
+    liTags[i].onmouseleave = function(){
+        let ul = event.currentTarget.getElementsByTagName('ul')[0];
+        console.log(ul);
+        ul.classList.remove("active");
+    }
 }
